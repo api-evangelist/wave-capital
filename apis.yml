@@ -1,8 +1,25 @@
 aid: wave-capital
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wave-capital.png
 name: Wave Capital
-description: 'Wave Capital is a company surfaced as a portfolio company of foundry-group and added to
-  the API Evangelist network as a stub for enrichment. Sector: venture-capital. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Wave Capital is an early-stage venture capital seed fund based in San Francisco,
+  founded in 2017 and run as a lean two-partner firm with no additional staff. The fund specializes
+  in marketplace startups and was conceived as the "Airbnb mafia" fund, backing pre-Series-A
+  founders drawn from the Airbnb, Dropbox, and Facebook alumni networks. Wave leads a highly
+  selective portfolio, making no more than four investments per year (typically around $1M) and
+  supporting founders with operating experience beyond capital. It publishes no developer API,
+  documentation, or developer portal — it is a private investment firm, catalogued in the API
+  Evangelist network as a company/VC profile surfaced via foundry-group''s portfolio.'
 url: https://raw.githubusercontent.com/api-evangelist/wave-capital/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,18 @@ x-backed-by:
 - foundry-group
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-api-surface: true
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Venture Capital
+- Seed Fund
+- Marketplaces
+- Early Stage
+- Investment
+- San Francisco
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wave-capital-domain-security.yml
 - type: Website
   url: https://wave.capital
+- type: LinkedIn
+  url: https://www.linkedin.com/company/wavecapital
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
